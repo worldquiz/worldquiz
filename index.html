@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="continent-selection">
+        <h1>Select a Quiz Category</h1>
+        <button onclick="startQuiz('World')">World</button>
+        <button onclick="startQuiz('Europe')">Europe</button>
+        <button onclick="startQuiz('Asia')">Asia</button>
+        <button onclick="startQuiz('Africa')">Africa</button>
+        <button onclick="startQuiz('Australia')">Australia and Oceania</button>
+        <button onclick="startQuiz('North America')">North America</button>
+        <button onclick="startQuiz('South America')">South America</button>
+    </div>
+
+    <div id="quiz-content" style="display: none;">
+        <h2 id="continent-title"></h2>
+        <div id="flag"></div>
+        <input type="text" id="answer" placeholder="Enter country name">
+        <button onclick="checkAnswer()">Submit Answer</button>
+        <button onclick="skipQuestion()">Skip Question (85 cups)</button>
+        <button onclick="goToHome()">Go to Main Menu</button>
+        <p id="result"></p>
+        <p>Cups: <span id="cups">0</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
